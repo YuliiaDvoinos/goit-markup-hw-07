@@ -1,1 +1,56 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+:root {
+  --main-titles-color: #212121;
+  --secondary-titles-color: #757575;
+  --third-title-color: #ffffff;
+  --background-main: #ffffff;
+  --dark-background: #2f303a;
+  --grey-background: #f5f4fa;
+  --interactive-elements: #2196f3;
+  --address: #757575;
+  --svg-main: #afb1b8;
+  --svg-modal: #212121;
+  --svg-secondary: #ffffff;
+  --svg-bgc: #ffffff 10%;
+  --svg-accent: #2196f3;
+  --borders: #afb1b8;
+  --borders-accent: #2196f3;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--main-titles-color);
+  background-color: var(--background-main);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.link-underline {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
