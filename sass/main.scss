@@ -9,8 +9,11 @@
 @import "./components/logo";
 
 //layout
+@import "./layout/header";
 @import "./layout/main-section";
 @import "./layout/qualities-section";
 @import "./layout/tasks-section";
 @import "./layout/team-section";
 @import "./layout/partners-section";
+@import "./layout/footer";
+@import "./layout/modal-form";

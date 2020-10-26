@@ -1,0 +1,17 @@
+.header {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: var(--background-main);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  padding: 25px 15px;
+}
+@import "../components/header-nav";
+@import "../components/header-address";

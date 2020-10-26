@@ -1,0 +1,32 @@
+.header .header-address {
+  display: flex;
+}
+
+.header .address {
+  margin-left: auto;
+}
+.header-svg {
+  margin-right: 10px;
+}
+.header-address .address-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--address);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.header-svg {
+  fill: var(--address);
+}
+.header-address .address-link:hover .header-svg,
+.header-address .address-link:focus .header-svg {
+  fill: var(--svg-accent);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
