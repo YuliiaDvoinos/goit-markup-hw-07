@@ -1,14 +1,14 @@
 .team-socials .social-logo {
-  fill: var(--svg-main);
+  fill: $svg-main;
 }
 .team-socials .social-link:hover {
-  background-color: var(--interactive-elements);
+  background-color: $interactive-elements;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover .social-logo {
-  fill: var(--svg-secondary);
+  fill: $svg-secondary;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -27,7 +27,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--background-main);
+  background-color: $background-main;
 }
 .team-socials .social-link {
   display: flex;
@@ -36,7 +36,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--background-main);
+  background-color: $background-main;
 }
 .team-socials .list-item:not(:last-child) {
   margin-right: 10px;

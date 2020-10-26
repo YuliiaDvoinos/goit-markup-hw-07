@@ -1,5 +1,5 @@
 .logo {
-  color: var(--main-titles-color);
+  color: $main-titles-color;
 
   font-family: Raleway, sans-serif;
 
@@ -8,5 +8,5 @@
   line-height: 1.2;
 }
 .logo-part {
-  color: var(--interactive-elements);
+  color: $interactive-elements;
 }

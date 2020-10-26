@@ -5,7 +5,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  background-color: var(--background-main);
+  background-color: $background-main;
 }
 .partners-list {
   display: flex;
@@ -14,7 +14,7 @@
   margin-top: 50px;
 }
 .partners-title {
-  color: var(--main-titles-color);
+  color: $main-titles-color;
 
   font-weight: bold;
   font-size: 36px;
@@ -31,22 +31,22 @@
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1px solid var(--borders);
+  border: 1px solid $borders;
   border-radius: 4px;
 }
 .partner-logo {
-  fill: var(--svg-main);
+  fill: $svg-main;
 }
 .partners-link:hover .partner-logo,
 .partners-link:focus .partner-logo {
-  fill: var(--svg-accent);
+  fill: $svg-accent;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .partners-link:hover,
 .partners-link:focus {
-  border: 1px solid var(--borders-accent);
+  border: 1px solid $borders-accent;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

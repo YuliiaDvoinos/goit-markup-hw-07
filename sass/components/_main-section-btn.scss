@@ -1,6 +1,6 @@
 .main-section .button {
-  background-color: var(--interactive-elements);
-  color: var(--third-title-color);
+  background-color: $interactive-elements;
+  color: $third-title-color;
   cursor: pointer;
 
   font-family: Roboto, sans-serif;

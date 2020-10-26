@@ -1,21 +1,3 @@
-:root {
-  --main-titles-color: #212121;
-  --secondary-titles-color: #757575;
-  --third-title-color: #ffffff;
-  --background-main: #ffffff;
-  --dark-background: #2f303a;
-  --grey-background: #f5f4fa;
-  --interactive-elements: #2196f3;
-  --address: #757575;
-  --svg-main: #afb1b8;
-  --svg-modal: #212121;
-  --svg-secondary: #ffffff;
-  --svg-bgc: #ffffff 10%;
-  --svg-accent: #2196f3;
-  --borders: #afb1b8;
-  --borders-accent: #2196f3;
-}
-
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -69,7 +51,7 @@ img {
 }
 
 .logo {
-  color: var(--main-titles-color);
+  color: #212121;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -77,14 +59,14 @@ img {
 }
 
 .logo-part {
-  color: var(--interactive-elements);
+  color: #2196f3;
 }
 
 .header {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-color: var(--background-main);
+  background-color: #ffffff;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
@@ -118,7 +100,7 @@ img {
 }
 
 .header-list .list-link {
-  color: var(--main-titles-color);
+  color: #212121;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -129,7 +111,7 @@ img {
 .header-list .list-link:focus,
 .header-address .address-link:hover,
 .header-address .address-link:focus {
-  color: var(--interactive-elements);
+  color: #2196f3;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -137,7 +119,7 @@ img {
 
 .header-list .active {
   position: relative;
-  color: var(--interactive-elements);
+  color: #2196f3;
 }
 
 .active::after {
@@ -147,7 +129,7 @@ img {
   bottom: -32px;
   width: 100%;
   height: 4px;
-  background-color: var(--interactive-elements);
+  background-color: #2196f3;
   border-radius: 2px;
 }
 
@@ -167,7 +149,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--address);
+  color: #757575;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -175,12 +157,12 @@ img {
 }
 
 .header-svg {
-  fill: var(--address);
+  fill: #757575;
 }
 
 .header-address .address-link:hover .header-svg,
 .header-address .address-link:focus .header-svg {
-  fill: var(--svg-accent);
+  fill: #2196f3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -190,7 +172,7 @@ img {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-color: var(--background-main);
+  background-color: #ffffff;
   padding-top: 100px;
   padding-bottom: 94px;
 }
@@ -206,8 +188,8 @@ img {
 }
 
 .filter-list .filter-button {
-  background-color: var(--grey-background);
-  color: var(--main-titles-color);
+  background-color: #f5f4fa;
+  color: #212121;
   border-radius: 4px;
   border: 1px solid transparent;
   padding: 6px 22px;
@@ -222,8 +204,8 @@ img {
 
 .filter-list .filter-button:hover,
 .filter-button:focus {
-  color: var(--third-title-color);
-  background-color: var(--interactive-elements);
+  color: #ffffff;
+  background-color: #2196f3;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -237,7 +219,7 @@ img {
 
 .portfolio-gallery .list-item {
   padding-bottom: 20px;
-  background-color: var(--background-main);
+  background-color: #ffffff;
   max-width: 370px;
   border: 1px solid #eeeeee;
 }
@@ -260,7 +242,7 @@ img {
 .portfolio-gallery .gallery-subtitle {
   margin-top: 20px;
   margin-left: 24px;
-  color: var(--main-titles-color);
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -270,7 +252,7 @@ img {
 .portfolio-gallery .gallery-description {
   margin-left: 24px;
   margin-top: 4px;
-  color: var(--secondary-titles-color);
+  color: #757575;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
@@ -301,7 +283,7 @@ img {
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  color: var(--third-title-color);
+  color: #ffffff;
 }
 
 .portfolio-gallery .list-item:hover .overlay {
@@ -316,7 +298,7 @@ img {
   padding-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
-  background-color: var(--dark-background);
+  background-color: #2f303a;
 }
 
 .footer .container {
@@ -325,7 +307,7 @@ img {
 }
 
 .footer .logo {
-  color: var(--third-title-color);
+  color: #ffffff;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -334,7 +316,7 @@ img {
 }
 
 .footer-list .location {
-  color: var(--third-title-color);
+  color: #ffffff;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -342,14 +324,14 @@ img {
 
 .footer-list .mail,
 .phone-number {
-  color: var(--address);
+  color: #757575;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
 }
 
 .footer-links .caption {
-  color: var(--third-title-color);
+  color: #ffffff;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.2;
@@ -394,12 +376,12 @@ img {
 
 /*interactive*/
 .footer-links .link-logo {
-  fill: var(--svg-main);
+  fill: #afb1b8;
 }
 
 .footer-links .links:hover,
 .footer-links .links:focus {
-  background-color: var(--interactive-elements);
+  background-color: #2196f3;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -423,7 +405,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--third-title-color);
+  color: #ffffff;
 }
 
 .subscriber-mail {
@@ -435,7 +417,7 @@ img {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: var(--third-title-color);
+  color: #ffffff;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -457,11 +439,11 @@ img {
   width: 200px;
   height: 50px;
   cursor: pointer;
-  background: var(--interactive-elements);
+  background: #2196f3;
   border: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--third-title-color);
+  color: #ffffff;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;

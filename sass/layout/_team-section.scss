@@ -5,10 +5,10 @@
   margin-right: auto;
   margin-left: auto;
 
-  background-color: var(--grey-background);
+  background-color: $grey-background;
 }
 .team-title {
-  color: var(--main-titles-color);
+  color: $main-titles-color;
 
   font-weight: bold;
   font-size: 36px;
@@ -20,7 +20,7 @@
   margin-top: 50px;
 }
 .team-list .team-item {
-  background-color: var(--background-main);
+  background-color: $background-main;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
     0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
@@ -34,7 +34,7 @@
 
   margin-top: 30px;
 
-  color: var(--main-titles-color);
+  color: $main-titles-color;
 
   font-weight: 500;
   font-size: 16px;
@@ -45,7 +45,7 @@
 
   margin-top: 10px;
 
-  color: var(--secondary-titles-color);
+  color: $secondary-titles-color;
 
   font-size: 16px;
   line-height: 1.2;

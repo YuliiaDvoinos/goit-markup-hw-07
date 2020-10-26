@@ -4,7 +4,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  background-color: var(--background-main);
+  background-color: $background-main;
 }
 
 .qualities-section .qualities-list {
@@ -17,7 +17,7 @@
   margin-right: 30px;
 }
 .qualities-list .caption {
-  color: var(--main-titles-color);
+  color: $main-titles-color;
 
   font-weight: bold;
   font-size: 14px;
@@ -27,7 +27,7 @@
 .qualities-section .qualities-description {
   margin-top: 10px;
 
-  color: var(--secondary-titles-color);
+  color: $secondary-titles-color;
 
   font-size: 14px;
   line-height: 1.7;
@@ -37,7 +37,7 @@
   display: block;
 
   height: 120px;
-  background-color: var(--grey-background);
+  background-color: $grey-background;
   margin-bottom: 30px;
 }
 .antenna::before {

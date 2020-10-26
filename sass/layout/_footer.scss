@@ -5,7 +5,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  background-color: var(--dark-background);
+  background-color: $dark-background;
 }
 .footer .container {
   display: flex;
@@ -13,7 +13,7 @@
 }
 
 .footer .logo {
-  color: var(--third-title-color);
+  color: $third-title-color;
 
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -22,7 +22,7 @@
   line-height: 1.2;
 }
 .footer-list .location {
-  color: var(--third-title-color);
+  color: $third-title-color;
 
   font-style: normal;
   font-size: 14px;
@@ -30,14 +30,14 @@
 }
 .footer-list .mail,
 .phone-number {
-  color: var(--address);
+  color: $address;
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
 }
 .footer-links .caption {
-  color: var(--third-title-color);
+  color: $third-title-color;
 
   font-weight: bold;
   font-size: 14px;
@@ -77,12 +77,12 @@
 /*interactive*/
 
 .footer-links .link-logo {
-  fill: var(--svg-main);
+  fill: $svg-main;
 }
 
 .footer-links .links:hover,
 .footer-links .links:focus {
-  background-color: var(--interactive-elements);
+  background-color: $interactive-elements;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
