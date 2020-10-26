@@ -1,0 +1,13 @@
+.portfolio-main {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: var(--background-main);
+
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
+
+@import "../layout/portfolio-filter";
+@import "../layout/porfolio-gallery";
