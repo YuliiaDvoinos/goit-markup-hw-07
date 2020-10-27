@@ -6,48 +6,51 @@
   margin-left: auto;
 
   background-color: $grey-background;
+
+  .team-title {
+    color: $main-titles-color;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .team-list {
+    display: flex;
+    margin-top: 50px;
+
+    .team-item {
+      background-color: $background-main;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+        0 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0 0 4px 4px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    .caption {
+      text-align: center;
+
+      margin-top: 30px;
+
+      color: $main-titles-color;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    .description {
+      text-align: center;
+
+      margin-top: 10px;
+
+      color: $secondary-titles-color;
+
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
 }
-.team-title {
-  color: $main-titles-color;
 
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-}
-.team-section .team-list {
-  display: flex;
-  margin-top: 50px;
-}
-.team-list .team-item {
-  background-color: $background-main;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 4px 4px;
-}
-
-.team-list .team-item:not(:last-child) {
-  margin-right: 30px;
-}
-.team-section .caption {
-  text-align: center;
-
-  margin-top: 30px;
-
-  color: $main-titles-color;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-}
-.team-section .description {
-  text-align: center;
-
-  margin-top: 10px;
-
-  color: $secondary-titles-color;
-
-  font-size: 16px;
-  line-height: 1.2;
-}
 @import "../components/team-socials";

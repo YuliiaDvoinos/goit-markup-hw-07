@@ -224,13 +224,7 @@ img {
   display: flex;
 }
 
-/*.qualities-section .list-item {
-  margin-top: 94px;}*/
-.qualities-section .list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.qualities-list .caption {
+.qualities-section .qualities-list .caption {
   color: #212121;
   font-weight: bold;
   font-size: 14px;
@@ -238,14 +232,18 @@ img {
   text-transform: uppercase;
 }
 
-.qualities-section .qualities-description {
+.qualities-section .qualities-list .qualities-description {
   margin-top: 10px;
   color: #757575;
   font-size: 14px;
   line-height: 1.7;
 }
 
-.qualities-list .list-item::before {
+.qualities-section .qualities-list .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.qualities-section .qualities-list .list-item::before {
   content: "";
   display: block;
   height: 120px;
@@ -253,25 +251,25 @@ img {
   margin-bottom: 30px;
 }
 
-.antenna::before {
+.qualities-section .antenna::before {
   background-image: url(../images/svg/qualities/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.clock::before {
+.qualities-section .clock::before {
   background-image: url(../images/svg/qualities/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.diagram::before {
+.qualities-section .diagram::before {
   background-image: url(../images/svg/qualities/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.astronaut::before {
+.qualities-section .astronaut::before {
   background-image: url(../images/svg/qualities/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -286,7 +284,7 @@ img {
   background-color: #ffffff;
 }
 
-.tasks-title {
+.tasks-section .tasks-title {
   color: #212121;
   font-weight: bold;
   font-size: 36px;
@@ -299,15 +297,15 @@ img {
   margin-top: 50px;
 }
 
-.tasks-list .list-item {
+.tasks-section .tasks-list .list-item {
   position: relative;
 }
 
-.tasks-section .list-item:not(:last-child) {
+.tasks-section .tasks-list .list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.tasks-list .overlay {
+.tasks-section .tasks-list .overlay {
   position: absolute;
   top: 224px;
   left: 0;
@@ -319,7 +317,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.tasks-list .overlay-description {
+.tasks-section .tasks-list .overlay-description {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
@@ -337,7 +335,7 @@ img {
   background-color: #f5f4fa;
 }
 
-.team-title {
+.team-section .team-title {
   color: #212121;
   font-weight: bold;
   font-size: 36px;
@@ -350,17 +348,17 @@ img {
   margin-top: 50px;
 }
 
-.team-list .team-item {
+.team-section .team-list .team-item {
   background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 }
 
-.team-list .team-item:not(:last-child) {
+.team-section .team-list .team-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-section .caption {
+.team-section .team-list .caption {
   text-align: center;
   margin-top: 30px;
   color: #212121;
@@ -369,7 +367,7 @@ img {
   line-height: 1.2;
 }
 
-.team-section .description {
+.team-section .team-list .description {
   text-align: center;
   margin-top: 10px;
   color: #757575;

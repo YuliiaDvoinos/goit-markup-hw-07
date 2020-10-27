@@ -5,62 +5,61 @@
   margin-left: auto;
 
   background-color: $background-main;
-}
 
-.qualities-section .qualities-list {
-  display: flex;
-}
-/*.qualities-section .list-item {
-  margin-top: 94px;}*/
+  .qualities-list {
+    display: flex;
 
-.qualities-section .list-item:not(:last-child) {
-  margin-right: 30px;
-}
-.qualities-list .caption {
-  color: $main-titles-color;
+    .caption {
+      color: $main-titles-color;
 
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-.qualities-section .qualities-description {
-  margin-top: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+    }
+    .qualities-description {
+      margin-top: 10px;
 
-  color: $secondary-titles-color;
+      color: $secondary-titles-color;
 
-  font-size: 14px;
-  line-height: 1.7;
-}
-.qualities-list .list-item::before {
-  content: "";
-  display: block;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .list-item:not(:last-child) {
+      margin-right: 30px;
+    }
 
-  height: 120px;
-  background-color: $grey-background;
-  margin-bottom: 30px;
-}
-.antenna::before {
-  background-image: url(../images/svg/qualities/antenna.svg);
+    .list-item::before {
+      content: "";
+      display: block;
 
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.clock::before {
-  background-image: url(../images/svg/qualities/clock.svg);
+      height: 120px;
+      background-color: $grey-background;
+      margin-bottom: 30px;
+    }
+  }
+  .antenna::before {
+    background-image: url(../images/svg/qualities/antenna.svg);
 
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.diagram::before {
-  background-image: url(../images/svg/qualities/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .clock::before {
+    background-image: url(../images/svg/qualities/clock.svg);
 
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.astronaut::before {
-  background-image: url(../images/svg/qualities/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .diagram::before {
+    background-image: url(../images/svg/qualities/diagram.svg);
 
-  background-repeat: no-repeat;
-  background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .astronaut::before {
+    background-image: url(../images/svg/qualities/astronaut.svg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

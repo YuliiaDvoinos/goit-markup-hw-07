@@ -1,34 +1,38 @@
-.portfolio-main .filter-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.filter-list .list-item:not(:last-child) {
-  margin-right: 30px;
-}
-.filter-list .filter-button {
-  background-color: $grey-background;
-  color: $main-titles-color;
+.portfolio-main {
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  border-radius: 4px;
-  border: 1px solid transparent;
+    .list-item:not(:last-child) {
+      margin-right: 30px;
+    }
+    .filter-button {
+      background-color: $grey-background;
+      color: $main-titles-color;
 
-  padding: 6px 22px;
+      border-radius: 4px;
+      border: 1px solid transparent;
 
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
+      padding: 6px 22px;
 
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.filter-list .filter-button:hover,
-.filter-button:focus {
-  color: $third-title-color;
-  background-color: $interactive-elements;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.6;
+
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      &:hover,
+      &:focus {
+        color: $third-title-color;
+        background-color: $interactive-elements;
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
 }
