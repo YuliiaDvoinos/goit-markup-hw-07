@@ -87,16 +87,8 @@ img {
   margin-right: 93px;
 }
 
-.header .header-list {
+.header-list {
   display: flex;
-}
-
-.header .list-item {
-  margin-right: 50px;
-}
-
-.header .list-item:last-child {
-  margin-right: 0;
 }
 
 .header-list .list-link {
@@ -106,11 +98,7 @@ img {
   line-height: 1.14;
 }
 
-/* interactive*/
-.header-list .list-link:hover,
-.header-list .list-link:focus,
-.header-address .address-link:hover,
-.header-address .address-link:focus {
+.header-list .list-link:hover, .header-list .list-link:focus {
   color: #2196f3;
   transition-property: color;
   transition-duration: 250ms;
@@ -122,7 +110,7 @@ img {
   color: #2196f3;
 }
 
-.active::after {
+.header-list .active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -133,16 +121,16 @@ img {
   border-radius: 2px;
 }
 
-.header .header-address {
+.header .list-item {
+  margin-right: 50px;
+}
+
+.header .list-item:last-child {
+  margin-right: 0;
+}
+
+.header-address {
   display: flex;
-}
-
-.header .address {
-  margin-left: auto;
-}
-
-.header-svg {
-  margin-right: 10px;
 }
 
 .header-address .address-link {
@@ -156,16 +144,28 @@ img {
   line-height: 1.14;
 }
 
-.header-svg {
-  fill: #757575;
-}
-
-.header-address .address-link:hover .header-svg,
+.header-address .address-link:hover,
 .header-address .address-link:focus .header-svg {
   fill: #2196f3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-address .address-link:hover, .header-address .address-link:focus {
+  color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-svg {
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.header .address {
+  margin-left: auto;
 }
 
 .portfolio-main {
@@ -263,7 +263,7 @@ img {
   overflow: hidden;
 }
 
-.card .overlay {
+.portfolio-gallery .card .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -279,7 +279,7 @@ img {
   opacity: 0;
 }
 
-.card .overlay-description {
+.portfolio-gallery .card .overlay-description {
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -315,6 +315,18 @@ img {
   line-height: 1.2;
 }
 
+.footer .address {
+  margin-top: 20px;
+}
+
+.footer .list-item {
+  margin-top: 9px;
+}
+
+.footer-nav {
+  margin-right: 70px;
+}
+
 .footer-list .location {
   color: #ffffff;
   font-style: normal;
@@ -323,7 +335,7 @@ img {
 }
 
 .footer-list .mail,
-.phone-number {
+.footer-list .phone-number {
   color: #757575;
   font-style: normal;
   font-size: 14px;
@@ -339,21 +351,9 @@ img {
   text-transform: uppercase;
 }
 
-.footer .address {
-  margin-top: 20px;
-}
-
-.footer .list-item {
-  margin-top: 9px;
-}
-
 .footer-links .links-list {
   display: flex;
   justify-content: space-between;
-}
-
-.footer-nav {
-  margin-right: 70px;
 }
 
 .footer-links .links-list {
@@ -374,7 +374,6 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/*interactive*/
 .footer-links .link-logo {
   fill: #afb1b8;
 }
@@ -391,7 +390,7 @@ img {
   margin-left: auto;
 }
 
-.subscribe-form {
+.footer-form .subscribe-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -408,7 +407,16 @@ img {
   color: #ffffff;
 }
 
-.subscriber-mail {
+.footer-form .form-label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-form .subscriber-mail {
   display: block;
   width: 358px;
   height: 50px;
@@ -424,14 +432,19 @@ img {
   border-radius: 4px;
 }
 
-.subscriber-mail::placeholder {
+.footer-form .subscriber-mail::placeholder {
   font-size: 16px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-btn-submit {
+.footer-form .subscriber-mail:focus {
+  outline: none;
+  background: transparent;
+}
+
+.footer-form .subscribe-btn-submit {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,7 +463,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.subscribe-btn-submit::after {
+.footer-form .subscribe-btn-submit::after {
   content: "";
   display: inline-block;
   margin-left: 6px;
@@ -461,10 +474,5 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
-}
-
-.subscriber-mail:focus {
-  outline: none;
-  background: transparent;
 }
 /*# sourceMappingURL=porfolio.css.map */

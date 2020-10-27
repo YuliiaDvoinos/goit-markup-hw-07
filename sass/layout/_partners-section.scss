@@ -12,6 +12,31 @@
   justify-content: space-between;
   max-width: 1600px;
   margin-top: 50px;
+
+  .partners-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $borders;
+    border-radius: 4px;
+
+    &:hover .partner-logo,
+    &:focus .partner-logo {
+      fill: $svg-accent;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover,
+    &:focus {
+      border: 1px solid $borders-accent;
+      transition-property: border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
 .partners-title {
   color: $main-titles-color;
@@ -25,29 +50,7 @@
 .partners-item {
   border-style: none;
 }
-.partners-list .partners-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid $borders;
-  border-radius: 4px;
-}
+
 .partner-logo {
   fill: $svg-main;
-}
-.partners-link:hover .partner-logo,
-.partners-link:focus .partner-logo {
-  fill: $svg-accent;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.partners-link:hover,
-.partners-link:focus {
-  border: 1px solid $borders-accent;
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

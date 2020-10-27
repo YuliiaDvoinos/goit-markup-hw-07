@@ -12,19 +12,21 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/section-main/bg-img.jpg);
-}
-.main-section .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-section .section-title {
-  color: $third-title-color;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-title {
+    color: $third-title-color;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
+
 @import "../components/main-section-btn";

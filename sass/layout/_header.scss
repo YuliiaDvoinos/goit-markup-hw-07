@@ -7,11 +7,13 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
+
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 25px 15px;
+  }
 }
-.header .container {
-  display: flex;
-  align-items: center;
-  padding: 25px 15px;
-}
+
 @import "../components/header-nav";
 @import "../components/header-address";
