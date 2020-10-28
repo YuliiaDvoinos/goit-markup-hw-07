@@ -144,14 +144,6 @@ img {
   line-height: 1.14;
 }
 
-.header-address .address-link:hover,
-.header-address .address-link:focus .header-svg {
-  fill: #2196f3;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .header-address .address-link:hover, .header-address .address-link:focus {
   color: #2196f3;
   transition-property: color;
@@ -162,6 +154,14 @@ img {
 .header-svg {
   margin-right: 10px;
   fill: #757575;
+}
+
+.address-link:hover .header-svg,
+.address-link:focus .header-svg {
+  fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .address {

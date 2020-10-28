@@ -15,13 +15,6 @@
       line-height: 1.14;
 
       &:hover,
-      &:focus .header-svg {
-        fill: $svg-accent;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      &:hover,
       &:focus {
         color: $interactive-elements;
         transition-property: color;
@@ -33,6 +26,14 @@
   &-svg {
     margin-right: 10px;
     fill: $address;
+
+    .address-link:hover &,
+    .address-link:focus & {
+      fill: $svg-accent;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
   .address {
     margin-left: auto;
