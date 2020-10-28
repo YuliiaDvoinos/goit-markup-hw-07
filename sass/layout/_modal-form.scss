@@ -31,12 +31,6 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &:focus + .modal-svg {
-      fill: $svg-accent;
-      transition-property: fill;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
   }
   .button-container {
     display: flex;
@@ -79,12 +73,6 @@
     outline: none;
     border: 1px solid $interactive-elements;
     transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &t:focus + .modal-svg {
-    fill: $svg-accent;
-    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -165,6 +153,13 @@
 
   left: 12px;
   bottom: 14px;
+
+  .form-input:focus + & {
+    fill: $svg-accent;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .checkbox-policy:checked + .label-policy::before {

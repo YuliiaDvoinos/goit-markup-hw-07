@@ -758,13 +758,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form .comment:focus + .modal-svg {
-  fill: #2196f3;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-form .button-container {
   display: flex;
   justify-content: center;
@@ -800,13 +793,6 @@ img {
   outline: none;
   border: 1px solid #2196f3;
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-inputt:focus + .modal-svg {
-  fill: #2196f3;
-  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -874,6 +860,13 @@ img {
   fill: #212121;
   left: 12px;
   bottom: 14px;
+}
+
+.form-input:focus + .modal-svg {
+  fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-policy:checked + .label-policy::before {
